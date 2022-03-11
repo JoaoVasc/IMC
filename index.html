@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMC</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <section class="principal">
+            <h1>CALCULADORA IMC</h1>
+            <div class="container">
+                <h1></h1>
+                <div class="tabelaImc">
+                    <h3>IMC</h3>
+                    <p>menor que 18,5</p>
+                    <p>maior ou igual a 18,5 e menor que 25,0</p>
+                    <p>maior ou igual a 25,0 e menor que 30,0</p>
+                    <p>maior ou igual a 30,0</p>
+                    <p>maior ou igual a 35,0</p>
+                    <p>maior ou igual a 40,0</p>
+                </div>
+                <div class="tabelaImc">
+                    <h3>sua condição</h3>
+                    <p>você está abaixo do peso</p>
+                    <p>você está na faixa de peso ideal</p>
+                    <p>você está acima do peso</p>
+                    <p>você está com obesidade grau 1</p>
+                    <p>você está com obesidade grau 2</p>
+                    <p>você está com obesidade grau 3</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="informacoes">
+                    <h1>insira suas informações</h1>
+                    <div class="inputs">
+    
+                        <label for="">Nome</label>
+                        <input class="nome" type="text">
+    
+                    </div>
+                    <div class="inputs">
+    
+                        <label for="">Peso</label>
+                        <input class="peso" type="text" placeholder="ex: 75.5">
+    
+                    </div>
+                    <div class="inputs">
+    
+                        <label for="">Altura</label>
+                        <input class="altura" type="text" placeholder="ex: 1.75">
+    
+                    </div>
+                    <div class="btn">
+                        <button class="calcular">calcular</button>
+                    </div>
+                </div>
+                <div class="resultados">
+                    <h1>seu resultado</h1>
+                    <div class="mostrar-resultado">
+                        <p class="resposta"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

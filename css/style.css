@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+	--fundo: #F4F7F8;
+	--cor1: #4B9093;
+	--detalhe1: #f59a73;
+	--detalhe2: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--cor1);
+    border-radius: 5rem;
+}
+body{
+    background: var(--fundo);
+}
+.principal{
+    background-color: var(--cor1);
+    max-width: 60rem;
+    margin: 2rem auto;
+    border-radius: 4rem;
+    flex-wrap: wrap;
+}
+.principal h1{
+    text-align: center;
+    color: var(--detalhe2);
+}
+.principal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.principal .container .tabelaImc{
+    margin-top: 2rem;
+
+
+}
+.principal .container .tabelaImc h3{
+    color: var(--detalhe2);
+    font-size: 2rem;
+}
+.principal .container .tabelaImc p{
+    color: var(--detalhe1);
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+}
+.informacoes, .resultados{
+    margin-top: 2rem;
+    border: solid .1rem var(--detalhe1);
+    padding: 0 3rem;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 3rem;
+}
+.informacoes h1,.resultados h1{
+    margin-top: .8rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+.informacoes .inputs{
+    padding: 2rem 0;
+}
+.informacoes .inputs label{
+    color: var(--detalhe2);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-shadow: .1rem .2rem .1rem #000;
+}
+
+.calcular{
+    padding: .5rem 6rem;
+    background-color: var(--fundo);
+    color: var(--detalhe1);
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: .1rem .1rem .5rem #000;
+}
+.calcular:hover{
+    padding: .5rem 6rem;
+    background-color: var(--detalhe1);
+    color: var(--detalhe2);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.mostrar-resultado{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mostrar-resultado .resposta{
+    font-size: 1.5rem;
+    color: var(--detalhe1);
+}
+
+
+@media (max-width: 665px) {
+    html{
+        font-size: 70%;
+        overflow-x: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+    }
+    .principal{
+        background-color: var(--cor1);
+        max-width: 50rem;
+        margin: 2rem auto;
+        border-radius: 4rem;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    body{
+        background: var(--cor1);
+    }
+}
