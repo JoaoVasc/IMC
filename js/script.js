@@ -12,13 +12,13 @@ const condicao = () =>{
     let imc = pesoN / (alturaN * alturaN);
     if(imc < 18.5){
         return 'Você Está Abaixo Do Peso'
-    }else if(18.5 <= imc < 25){
+    }if(18.5 <= imc < 25){
         return 'Você Está Na Faixa De Peso Ideal'
-    }else if(25 <= imc < 30){
+    }if(25 <= imc < 30){
         return 'Você Está Acima Do Peso'
-    }else if(30 <= imc < 35){
+    }if(30 <= imc < 35){
         return 'Você Está Com Obesidade Grau 1'
-    }else if(35 <= imc < 40){
+    }if(35 <= imc < 40){
         return 'Você Está Com Obesidade Grau 2'
     }else{
         return 'Você Está Com Obesidade Grau 3'
@@ -35,7 +35,7 @@ const inserirResultado = () => {
         resposta.innerHTML = `Olá ${nome.value}, o seu IMC é de: ${resultado}. E ${condicao()}`
     }
     if(!imc){
-        alert('Dados inválidos tente novamente');
+        alert('Dados inválidos tente novamente, Experimente separar a casa decimal com "."');
     }
 
 }
